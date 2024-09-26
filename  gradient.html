@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients - A Complete Guide</title>
+   
+    <script>
+        function runCode(exampleId) {
+            const code = document.getElementById(exampleId).textContent;
+            const iframe = document.getElementById(`output-${exampleId}`);
+            iframe.srcdoc = `<style>body {margin: 0; padding: 0;} ${code}</style><div class="background-gradient" style="height: 200px;"></div>`;
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>CSS Gradients - A Complete Guide</h1>
+    <p>CSS gradients allow developers to create smooth transitions between colors. They are highly useful in web design for creating visually appealing backgrounds, buttons, and even text effects.</p>
+
+    <h2>1. Types of Gradients in CSS</h2>
+    <p>There are three main types of CSS gradients:</p>
+    <ul>
+        <li><strong>Linear Gradients:</strong> Colors transition along a straight line.</li>
+        <li><strong>Radial Gradients:</strong> Colors radiate from a central point outward.</li>
+        <li><strong>Conic Gradients:</strong> (Optional) Colors transition in a circular pattern like a pie chart.</li>
+    </ul>
+
+    <h2>2. Creating Linear Gradients</h2>
+    <p>Linear gradients are the simplest type of gradient, transitioning colors along a straight path. Here's how to create one:</p>
+
+    <div class="example">
+        <pre id="linear-gradient">/* Basic linear gradient */
+.background-gradient {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}</pre>
+        <button class="editor-button" onclick="runCode('linear-gradient')">Run Example</button>
+        <iframe id="output-linear-gradient"></iframe>
+    </div>
+
+    <h2>3. Creating Radial Gradients</h2>
+    <p>Radial gradients radiate outwards from a central point, either in a circular or elliptical shape:</p>
+
+    <div class="example">
+        <pre id="radial-gradient">/* Basic radial gradient */
+.background-gradient {
+    background: radial-gradient(circle, #ff7e5f, #feb47b);
+}</pre>
+        <button class="editor-button" onclick="runCode('radial-gradient')">Run Example</button>
+        <iframe id="output-radial-gradient"></iframe>
+    </div>
+
+    <h2>4. Creating Conic Gradients</h2>
+    <p>Conic gradients transition colors around a central point, much like a pie chart. Here's the syntax:</p>
+
+    <div class="example">
+        <pre id="conic-gradient">/* Basic conic gradient */
+.background-gradient {
+    background: conic-gradient(from 0deg, red, yellow, green, blue, purple, red);
+}</pre>
+        <button class="editor-button" onclick="runCode('conic-gradient')">Run Example</button>
+        <iframe id="output-conic-gradient"></iframe>
+    </div>
+
+    <h2>5. Advanced Gradient Techniques</h2>
+    <p>Gradients can be combined with advanced techniques like transparency and multiple stops:</p>
+
+    <div class="example">
+        <pre id="multi-stop-gradient">/* Example of multi-stop gradient */
+.background-gradient {
+    background: linear-gradient(to right, red, yellow, green, blue, purple);
+}</pre>
+        <button class="editor-button" onclick="runCode('multi-stop-gradient')">Run Example</button>
+        <iframe id="output-multi-stop-gradient"></iframe>
+    </div>
+
+    <h2>6. Practical Examples</h2>
+    <p>Now, let's look at how gradients can be applied to buttons, backgrounds, and more:</p>
+    <ul>
+        <li>Buttons with gradients</li>
+        <li>Backgrounds with gradients</li>
+        <li>Gradients in logos or icons</li>
+    </ul>
+
+    <h2>7. Conclusion</h2>
+    <p>CSS gradients are a versatile tool for adding visually appealing effects to web design. Experiment with different types and combinations to enhance your creativity!</p>
+
+</div>
+
+</body>
+</html>
+ 
+
+
